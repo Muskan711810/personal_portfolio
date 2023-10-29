@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Muskaan Shaikh</title>
+  </head>
+  <body>
+    <!-- Nav  -->
+    <nav id="mobile-nav" class="mobile-nav responsive_nav">
+        <div class="itemL">
+          <a href="/">Muskaan Shaikh</a>
+        </div>
+        <div class="itemR">
+          <ul>
+            <li>
+              <a href="#inro" >Home</a>
+            </li>
+            <li>
+              <a href="#projects" >Projects</a>
+            </li>
+            <li>
+              <a href="#contact" >Contact</a>
+            </li>
+            <li>
+              <a href="#about" >About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="nav-btn">
+        <span id="icon"></span>
+      </button>
+      
+    <!-- Hero  -->
+    <main>
+      <section data-aos="fade-right" id="intro" class="hero">
+        <div class="heroText">
+          <p class="topData">Hey, I'm</p>
+          <h1 class="title">Muskaan Shaikh</h1>
+          <p class="heroData">I'm a Web Developer.</p>
+          <a
+            class="btn resume"
+            href="./assets/Muskan Shaikh.CV (7).pdf"
+            target="_blank"
+          >
+            <span class="View">View</span> Resume
+          </a>
+        </div>
+        <div class="heroImg">
+          <img class="heroGif" src="./assets/hero.gif" alt="hero img" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Projects -->
+    <section data-aos="zoom-in-down" id="projects">
+      <div class="projectTitle">My Projects.</div>
+      <section class="page-contain">
+        <div data-aos="flip-right" class="data-card">
+          <h3>01</h3>
+          <h4>Portfolio Site.</h4>
+          <p>My personal site using HTML,CSS and JavaScript.</p>
+          <a
+            href="https://github.com/Muskan711810"
+            target="_blank"
+          >
+            <button class="gitbtn">GitHub</button>
+          </a>
+        </div>
+      </section>
+    </section>
+    <!-- About -->
+    <section data-aos="fade-down-right" id="about">
+      <h3 class="about-h3">About Me</h3>
+      <div class="about">
+        <img class="about-img" src="./assets/hero2.png" alt="hero 2" />
+        <p>
+          Hey I'm a Web Developer currently foucused on Front End and polishing
+          Backend skills... <br />I am currently pursuing Master's in Computer
+           Science at Pune University. <!-- I finished learning basic MERN stack 
+          development in just 73 days, I've documented my learning jounrey on
+          Linkedin, do checkout... <br /> -->
+          I'm constantly learning new features and technologies at a daily
+          basis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div data-aos="zoom-out-down" class="card">
+        <div class="content">
+          <img class="skillIcon" src="./assets/html5.svg" alt="Icon" />
+          <p class="skillName">HTML</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon" src="./assets/css3.svg" alt="Icon" />
+          <p class="skillName">CSS3</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon" src="./assets/js.svg" alt="Icon" />
+          <p class="skillName">JavaScript</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon" src="./assets/github.svg" alt="Icon" />
+          <p class="skillName">GitHub</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon" src="./assets/api.svg" alt="Icon" />
+          <p class="skillName">API</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon" src="./assets/python.svg" alt="Icon" />
+          <p class="skillName">Python</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon django" src="./assets/django.svg" alt="Icon" />
+          <p class="skillName">Django</p>
+        </div>
+        <div class="content">
+          <img class="skillIcon" src="./assets/bootstrap.svg" alt="Icon" />
+          <p class="skillName">Bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact">
+      <div class="wrapper">
+        <form
+          class="form"
+          method="post"
+          action="mailto:muskaanshaikh0440@gmail.com"
+        >
+          <div class="pageTitle title">Contact Me...</div>
+          <div class="secondaryTitle title">
+            Please fill this form to get in touch.
+          </div>
+          <input type="text" class="name formEntry" placeholder="Name" />
+          <input type="text" class="email formEntry" placeholder="Email" />
+          <textarea
+            class="message formEntry"
+            placeholder="Message"
+          ></textarea>
+          <button class="submit formEntry">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="Footer">
+        <div class="footer-right">
+          <a href="#"></a>
+          <a
+            title="linkedin"
+            href="https://www.linkedin.com/in/muskaanshaikh711/"
+            target={"_blank"}
+          >
+            <img
+              class="footerIcon"
+              src="./assets/linkedin2.png"
+              alt="linkedIn"
+            />
+          </a>
+          <a
+            title="github"
+            href="https://github.com/Muskan711810"
+            target={"_blank"}
+          >
+            <img
+              class="footerIcon"
+              src="./assets/github2.png"
+              alt="GitHub"
+            />
+          </a>
+        </div>
+        <!-- <div class="footer-left">
+          <p>
+            Muskaan Shaikh Copyright &copy; {new Date().getFullYear()} All Rights
+            Reserved.
+          </p>
+        </div> -->
+        <div class="footer-left">
+            <p id="copyright"></p>
+          </div>          
+      </footer>
+
+      <script src="./index.js"></script>
+  </body>
+</html>
