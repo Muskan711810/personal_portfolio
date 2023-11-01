@@ -674,3 +674,13 @@ nav {
     margin: 1rem auto;
   }
 }  /* 450px   */
+.mobile-nav .close {
+  display: none; /* Hide the "x-mark" icon by default */
+}
+
+.mobile-nav .open {
+  display: inline-block; /* Show the "bars" icon by default */
+  cursor: pointer;
+  /* Add styling for the "bars" icon, e.g., size and color */
+}
+

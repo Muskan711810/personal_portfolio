@@ -25,18 +25,35 @@ document.getElementById("copyright").textContent =
   "Muskaan Shaikh Copyright © " + currentYear + " All Rights Reserved.";
 
 // Function to toggle the mobile nav
+// function toggleNavbar() {
+//   var mobileNav = document.getElementById("mobile-nav");
+//   var icon = document.getElementById("icon");
+
+//   if (mobileNav.classList.contains("responsive_nav")) {
+//     mobileNav.classList.remove("responsive_nav");
+//     icon.innerHTML = '<i class="fa fa-bars"></i>';
+//   } else {
+//     mobileNav.classList.add("responsive_nav");
+//     icon.innerHTML = '<i class="fa fa-times"></i>';
+//   }
+// }
+
 function toggleNavbar() {
   var mobileNav = document.getElementById("mobile-nav");
-  var icon = document.getElementById("icon");
+  var openIcon = mobileNav.querySelector(".open");
+  var closeIcon = mobileNav.querySelector(".close");
 
   if (mobileNav.classList.contains("responsive_nav")) {
     mobileNav.classList.remove("responsive_nav");
-    icon.innerHTML = '<i class="fa fa-bars"></i>';
+    openIcon.style.display = "inline-block"; // Show the "bars" icon
+    closeIcon.style.display = "none"; // Hide the "x-mark" icon
   } else {
     mobileNav.classList.add("responsive_nav");
-    icon.innerHTML = '<i class="fa fa-times"></i>';
+    openIcon.style.display = "none"; // Hide the "bars" icon
+    closeIcon.style.display = "inline-block"; // Show the "x-mark" icon
   }
 }
+
 
 // Function to close the mobile nav when a link is clicked
 function closeMobileNav() {
