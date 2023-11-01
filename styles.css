@@ -674,13 +674,23 @@ nav {
     margin: 1rem auto;
   }
 }  /* 450px   */
-.mobile-nav .close {
-  display: none; /* Hide the "x-mark" icon by default */
-}
-
-.mobile-nav .open {
-  display: inline-block; /* Show the "bars" icon by default */
+.mobile-nav .mobile-nav-icon {
+  display: none; /* Hide all icons by default */
+  width: 24px; /* Adjust the icon size as needed */
+  height: 24px;
   cursor: pointer;
-  /* Add styling for the "bars" icon, e.g., size and color */
 }
 
+.mobile-nav .close {
+  display: none; /* Hide the "close" icon by default */
+}
+
+.mobile-nav.responsive_nav .mobile-nav-icon.close {
+  display: inline-block; /* Show the "close" icon when the menu is open */
+}
+
+@media (max-width: 768px) {
+  .mobile-nav .mobile-nav-icon {
+    display: inline-block;
+  }
+}

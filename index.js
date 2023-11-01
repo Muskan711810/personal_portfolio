@@ -40,19 +40,23 @@ document.getElementById("copyright").textContent =
 
 function toggleNavbar() {
   var mobileNav = document.getElementById("mobile-nav");
-  var openIcon = mobileNav.querySelector(".open");
-  var closeIcon = mobileNav.querySelector(".close");
+  var iconsContainer = document.getElementById("icons-container");
 
   if (mobileNav.classList.contains("responsive_nav")) {
     mobileNav.classList.remove("responsive_nav");
-    openIcon.style.display = "inline-block"; // Show the "bars" icon
-    closeIcon.style.display = "none"; // Hide the "x-mark" icon
   } else {
     mobileNav.classList.add("responsive_nav");
-    openIcon.style.display = "none"; // Hide the "bars" icon
-    closeIcon.style.display = "inline-block"; // Show the "x-mark" icon
+  }
+
+  // Toggle the visibility of the icons container
+  if (iconsContainer.style.display === "none") {
+    iconsContainer.style.display = "block";
+  } else {
+    iconsContainer.style.display = "none";
   }
 }
+
+
 
 
 // Function to close the mobile nav when a link is clicked
